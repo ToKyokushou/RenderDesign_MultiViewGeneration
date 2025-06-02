@@ -12,11 +12,7 @@ This project proposes a **three-stage generation framework** that transforms sim
 
 We enhance **ControlNet** to process multi-view inputs, apply **monocular depth estimation**, and fuse RGB–depth features using a novel **depth-aware consistency module**. This framework is designed to assist early-stage university building design, improving both **visual quality** and **geometric coherence**.
 
-<p align="center">
-  <img src="./framework.png" width="600" alt="Framework Overview">
-  <br>
-  <em>Three-stage pipeline for architectural image generation (replace with actual image)</em>
-</p>
+![Framework](./framework.png)
 
 ---
 
@@ -52,9 +48,13 @@ We enhance **ControlNet** to process multi-view inputs, apply **monocular depth 
 
 ## 📊 Reconstruction Results
 
+![Reconstruction Results](./result1.png)
+
 ---
 
 ## 📊 Generation Results
+
+![Generation Results](./result2.png)
 
 ---
 
