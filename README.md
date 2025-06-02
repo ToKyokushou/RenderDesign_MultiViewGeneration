@@ -1,9 +1,9 @@
 # Multi-View Depth Consistent Image Generation
 
 **Architectural Design Automation from Shoebox Models using Generative AI**  
-📄 [ArXiv Paper (2025)](https://arxiv.org/abs/2503.03068) — *Published at CAADRIA 2025*
+📄 [Paper (2025)](https://arxiv.org/abs/2503.03068) — *Published at CAADRIA 2025*
 
-🎬 [Download and Play Demo Video](./demo.mp4)
+🎬 [Demo Video](./demo.mp4)
 
 ---
 
