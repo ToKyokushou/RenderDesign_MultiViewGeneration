@@ -12,7 +12,7 @@ This project proposes a **three-stage generation framework** that transforms sim
 
 We enhance **ControlNet** to process multi-view inputs, apply **monocular depth estimation**, and fuse RGB–depth features using a novel **depth-aware consistency module**. This framework is designed to assist early-stage university building design, improving both **visual quality** and **geometric coherence**.
 
-![Framework](framework.png)
+![Framework](./framework.png)
 
 ---
 
