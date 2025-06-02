@@ -1,4 +1,4 @@
-# 🎯 Multi-View Depth Consistent Image Generation
+# Multi-View Depth Consistent Image Generation
 
 **Architectural Design Automation from Shoebox Models using Generative AI**  
 📄 [IEEE Paper (2024)](https://ieeexplore.ieee.org/document/10418885)  
@@ -8,51 +8,52 @@
 
 ## 🔍 Overview
 
-This project presents a **three-stage generation framework** that converts simplified **shoebox models** into multi-view, photorealistic architectural renderings using **generative AI**.
+This project proposes a **three-stage generation framework** that transforms simplified **shoebox models** into **multi-view, photorealistic architectural renderings** using generative AI.
 
-We enhance **ControlNet** to support multi-view inputs, apply **monocular depth estimation**, and fuse RGB–depth information using a novel **depth-aware consistency mechanism**. The framework targets early-stage university building design and aims to improve both **design visualization** and **geometric coherence**.
+We enhance **ControlNet** to process multi-view inputs, apply **monocular depth estimation**, and fuse RGB–depth features using a novel **depth-aware consistency module**. This framework is designed to assist early-stage university building design, improving both **visual quality** and **geometric coherence**.
 
-<div align="center">
+<p align="center">
   <img src="https://user-images.githubusercontent.com/demo-image-framework.jpg" width="600" alt="Framework Overview">
-  <p><em>Three-stage pipeline for architectural image generation (replace with actual image)</em></p>
-</div>
+  <br>
+  <em>Three-stage pipeline for architectural image generation (replace with actual image)</em>
+</p>
 
 ---
 
 ## 🏗️ Core Contributions
 
-- ⚙️ A **multi-view diffusion architecture** based on ControlNet for generating coherent architectural images.
-- 🎨 An **image-space consistency loss** combining style, structure, and viewpoint alignment.
-- 🧠 A **depth-aware fusion module** using MiDaS and MVD-Fusion to enhance multi-view 3D realism.
-- 🏫 A custom **university building dataset**: 12,600 shoebox views paired with 12,600 photorealistic designs.
+- ⚙️ A **multi-view diffusion model** based on ControlNet for generating coherent architectural images.
+- 🎨 An **image-space consistency loss** to improve cross-view style, structure, and angle alignment.
+- 🧠 A **depth-aware fusion module** using MiDaS and MVD-Fusion to enhance geometric consistency.
+- 🏫 A curated **university building dataset**: 12,600 shoebox images paired with 12,600 design renderings.
 
 ---
 
 ## 🧪 Method Summary
 
 ### Stage 1: Multi-View Generation
-> Shoebox inputs → Multi-view ControlNet → Architectural images with color, texture, structure.
+> Shoebox images → Multi-view ControlNet → Architectural renderings with texture and structure
 
 ### Stage 2: Depth Estimation
-> Generated views → MiDaS → View-specific depth maps.
+> Generated views → MiDaS → Depth maps per viewpoint
 
 ### Stage 3: Fusion & Consistency Refinement
-> Images + Depth → MVD-Fusion → Style-aligned & structurally coherent renderings.
+> (RGB + Depth) → MVD-Fusion → Depth-aligned and style-consistent results
 
 ---
 
 ## 📦 Dataset
 
-- **Shoebox models**: 210 models representing simplified university buildings.
-- **Multi-view images**: Rendered with Blender (60 angles/model).
-- **Total images**: 25,200 paired images (RGB and ground truth).
+- 🧱 **Shoebox models**: 210 simplified 3D models of university buildings  
+- 📸 **Multi-view renderings**: 60 viewpoints/model via Blender  
+- 🖼️ **Total samples**: 25,200 RGB–design image pairs  
 
 ---
 
 ## 📊 Results
 
-| Evaluation Metric      | Reconstruction | Generation |
-| ---------------------- | -------------- | ---------- |
+| Metric                 | Reconstruction | Generation |
+|------------------------|----------------|------------|
 | Structural Integrity   | 3.57           | 3.55       |
 | Structural Consistency | 3.53           | 3.43       |
 | Detail Integrity       | 3.56           | 3.35       |
@@ -60,15 +61,18 @@ We enhance **ControlNet** to support multi-view inputs, apply **monocular depth 
 | Visual Aesthetics      | 3.17           | 3.03       |
 | Practicality           | 3.42           | 3.37       |
 
+> 📈 Evaluated by 15 architecture graduate students across 6 dimensions.
+
 ---
 
 ## 📚 Citation
-If you use this work, please cite:
 
+If you use this work in your research, please cite:
+
+```bibtex
 @inproceedings{du2024multiview,
   title={Multi-View Depth Consistent Image Generation Using Generative AI Models: Application on Architectural Design of University Buildings},
   author={Du, Xusheng and Gui, Ruihan and Wang, Zhengyang and Zhang, Ye and Xie, Haoran},
   booktitle={IEEE Conference on Computer Vision},
   year={2024}
 }
-
