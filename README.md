@@ -3,7 +3,7 @@
 **Architectural Design Automation from Shoebox Models using Generative AI**  
 📄 [Paper (2025)](https://arxiv.org/abs/2503.03068) — *Published at CAADRIA 2025*
 
-🎬 [Demo Video](./demo.mp4)
+🎬 Demo Video – *Coming Soon*
 
 ---
 
